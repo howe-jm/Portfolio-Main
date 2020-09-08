@@ -3,6 +3,64 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #BEC5C2;
     color: #303633;
+}
+
+img {
+    size: 100%;
+}
+
+header.h1 {
+    padding: 0 0 0 2%;
+}
+
+/* Flexbox element controls */
+
+
+.head-container{
+    display: flex;
+    background-color: #303633;
+    color: #FFFFFF;
+    flex-flow: row wrap;
+}
+
+.name-box {
+    flex-grow: 1;
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    background-color: #ffffff;
+    flex-flow: column wrap;
+}
+
+.main-img {
+    flex: 1;
+}
+
+.portrait {
+    width: 20%;
+}
+
+.traits-box {
+
+    flex: 1;
+    margin: 0 2% 0 2%;
+}
+
+/* Flexbox element controls with Media Queries */
+
+@media all and (min-width: 800px) {
+    body {
+        justify-content: center;
+    }
+    .head-container {
+        width: 65%;
+    }
+    .container {
+        flex-flow: row wrap;
+        width: 65%
+    }
 }
