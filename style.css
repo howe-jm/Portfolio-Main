@@ -1,145 +1,261 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #page-wrap {
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 body {
-    background-color: #BEC5C2;
-    color: #303633;
+  background-color: #bec5c2;
+  color: #303633;
 }
 
 img {
-    width: 100%;
+  width: 100%;
+}
+
+header h1,
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+p,
+h3,
+h4,
+h5,
+nav {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+h4,
+h5 {
+  font-size: 1.2em;
+  margin-bottom: -10px;
+}
+
+p {
+  font-size: 1.1em;
 }
 
 footer {
-    background: #303633;
-    color: #FFFFFF;
-    width: 65%;
-    max-width: 1024px;
-    text-align: center;
-    margin: 0% auto;
-    padding: 1px 0;
+  background: #303633;
+  color: #ffffff;
+  text-align: center;
+  margin: 0% auto;
+  padding: 1px 0;
+  max-width: 900px;
 }
 
 /* Flexbox element controls */
-
 .main-container {
-    display: flex;
-    flex-flow: column wrap;
-    background-color: #ffffff;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #ffffff;
+  max-width: 900px;
 }
 
 .container {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
 }
 
-.head-container{
-    display: flex;
-    background-color: #303633;
-    color: #FFFFFF;
-    flex-flow: row wrap;
+.head-container {
+  display: flex;
+  background-color: #303633;
+  color: #ffffff;
+  flex-flow: column wrap;
+  justify-items: center;
+}
+
+header nav {
+  display: flex;
+  align-self: center;
+  margin: 0 7% 0 0;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 5px 0 5px;
 }
 
 .name-box {
-    flex-grow: 1;
-    flex: 1;
-    padding: 0 0 0 2%;
+  flex-grow: 1;
+  flex: 1;
+  padding: 0 0 0 2%;
+  margin: 0 auto 0 auto;
+  text-align: center;
 }
 
 .main-img {
-    justify-self: flex-start;
-    align-self: center;
-    margin: 5% 0 0 0;
+  justify-self: flex-start;
+  align-self: center;
+  margin: 5% 0 0 0;
 }
 
-.main-img, img {
-    border-radius: 50%;
-    justify-content: center;
-    max-width: 350px;
+.main-img img {
+  border-radius: 50%;
+  justify-content: center;
+  max-width: 350px;
 }
 
 .personal {
-    justify-self: flex-start;
-    margin: 0 2% 0 2%;
+  justify-self: flex-start;
+  margin: 0 2% 0 2%;
 }
-.personal, h3 {
-    text-align: center;
+.personal,
+h3 {
+  text-align: center;
 }
 
 .traits-container {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .projects-container {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
+  border-width: 10px;
+  border-color: #000;
 }
 
 .project {
-    flex: 1;
-    margin: 0 2% 0 2%;
+  flex: 1;
+  margin: 0 2% 0 2%;
 }
 
 .traits-box {
-    flex: 1;
-    margin: 0 2% 0 2%;
+  flex: 1;
+  margin: 0 2% 0 2%;
 }
 
 .contact {
-    margin: 0 10% 0 10%;
+  display: flex;
+  text-align: center;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100%;
+  font-size: 0;
 }
+
+.contact-h2 {
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.ghmark {
+  width: 10%;
+}
+
+.ghlogo {
+  width: 30%;
+}
+
+.linkprof {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.linklogo {
+  width: 30%;
+}
+
+.email-form {
+  font-size: 1rem;
+  text-align: left;
+  text-justify: left;
+}
+
+.subj {
+  display: block;
+}
+
+
 
 /* Flexbox element controls with Media Queries */
 
 @media all and (min-width: 800px) {
-    #page-wrap {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1024px;
-    }
+  #page-wrap {
+    margin-right: auto;
+    margin-left: auto;
+    width: 65%;
+  }
 
-    .head-container {
-        width: 65%;
-        margin: auto;
-    }
-    .container {
-        flex-flow: row wrap;
-        margin: auto;
-    }
-    .main-img {
-        justify-self: flex-start;
-        align-self: center;
-        margin: 2% auto;
-    }
-    .traits-container {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .main-img, img {
-        max-width: 400px;
-    }
-    .main-container {
-        width: 65%;
-        margin: auto;
-    }
-    .projects-container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    }
-    .project {
-        min-width: 300px;
-        width: 50%;
-        padding: 0% 2% 50% 0%;
-        margin: 0% 2% -50% 2%;
-        position: relative;
-    }
+  .head-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    flex-flow: row wrap;
+  }
 
+  .name-box {
+    flex-grow: 1;
+    flex: 1;
+    padding: 0 0 0 2%;
+    margin: 0 auto 0 auto;
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  header nav {
+    display: flex;
+    align-self: flex-end;
+    margin: 0 0 0 0;
+  }
+
+  header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px 0 5px;
+  }
+  .container {
+    flex-flow: row wrap;
+    margin: auto;
+  }
+  .main-img {
+    justify-self: flex-start;
+    align-self: center;
+    margin: 2% auto;
+  }
+  .traits-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .main-img,
+  img {
+    max-width: 400px;
+  }
+  .main-container {
+    width: 100%;
+    margin: auto;
+  }
+  .projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .project {
+    flex: 1;
+    min-width: 300px;
+    width: 49%;
+  }
 }
