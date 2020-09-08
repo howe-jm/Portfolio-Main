@@ -3,7 +3,6 @@
 }
 
 #page-wrap {
-    width: 920px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -60,6 +59,21 @@ img {
     margin: 0 2% 0 2%;
 }
 
+.traits-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.project {
+    flex: 1;
+    margin: 0 2% 0 2%;
+}
+
 .traits-box {
     flex: 1;
     margin: 0 2% 0 2%;
@@ -72,6 +86,12 @@ img {
 /* Flexbox element controls with Media Queries */
 
 @media all and (min-width: 800px) {
+    #page-wrap {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1024px;
+    }
+
     .head-container {
         width: 65%;
         margin: auto;
@@ -85,12 +105,28 @@ img {
         align-self: center;
         margin: auto;
     }
+    .traits-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
     .main-img, img {
         max-width: 400px;
     }
     .main-container {
         width: 65%;
         margin: auto;
+    }
+    .projects-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .project {
+        min-width: 300px;
+        width: 50%;
+        padding: 0% 2% 50% 0%;
+        margin: 0% 2% -50% 2%;
+        position: relative;
     }
 
 }
