@@ -16,6 +16,16 @@ img {
     size: 100%;
 }
 
+footer {
+    background: #303633;
+    color: #FFFFFF;
+    width: 65%;
+    max-width: 1024px;
+    text-align: center;
+    margin: 0% auto;
+    padding: 1px 0;
+}
+
 /* Flexbox element controls */
 
 .main-container {
