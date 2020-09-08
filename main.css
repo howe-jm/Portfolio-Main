@@ -55,9 +55,18 @@ img {
     max-width: 350px;
 }
 
+.personal {
+    justify-self: flex-start;
+    margin: 0 2% 0 2%;
+}
+
 .traits-box {
     flex: 1;
     margin: 0 2% 0 2%;
+}
+
+.contact {
+    margin: 0 10% 0 10%;
 }
 
 /* Flexbox element controls with Media Queries */
