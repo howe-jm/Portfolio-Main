@@ -25,11 +25,14 @@ h2 {
 
 h3,
 h4,
-h5, {
-  font-family: "Fauna One", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+h5 {
+  font-family: "Fauna One", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
 }
 
-nav, label, p {
+nav,
+label,
+p {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -193,7 +196,8 @@ h3 {
   margin-bottom: 10px;
 }
 
-.project a, .project2 a {
+.project a,
+.project2 a {
   text-decoration: none;
   color: #bec5c2;
 }
@@ -296,6 +300,20 @@ h3 {
   color: #bec5c2;
 }
 
+.bashbx {
+  flex: 1;
+  width: 65%;
+  margin-left: 17.5%;
+  height: 36px;
+  background: #000;
+  color: #fff;
+}
+
+.bashtxt {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+}
+
 /* Flexbox element controls with Media Queries */
 
 @media all and (min-width: 900px) {
@@ -373,6 +391,10 @@ h3 {
     align-self: center;
     margin: 2% auto;
   }
+  .bashbx {
+    width: 45%;
+    margin-left: 27%;
+  }
   .traits-container {
     display: flex;
     flex-flow: row wrap;
@@ -439,5 +461,26 @@ h3 {
 
   .name-address-group div {
     width: 49%;
+  }
+}
+
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: #fff;
+  }
+  49% {
+    color: #fff;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #fff;
   }
 }
