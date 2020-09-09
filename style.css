@@ -220,6 +220,15 @@ h3 {
   text-align: center;
 }
 
+.emailadd {
+  font-size: 1.2rem;
+  background-color: #292e2c;
+  color: #fff;
+  padding: 10px 20px;
+  width: 85%;
+  text-decoration: none;
+}
+
 /* Github/LinkedIn Graphics */
 .ghmark {
   width: 10%;
