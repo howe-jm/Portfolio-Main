@@ -61,7 +61,6 @@ footer {
 
 /* Flexbox element controls */
 /* Header Formatting */
-
 .head-container {
   width: 100%;
   display: flex;
@@ -305,7 +304,8 @@ h3 {
   }
 
   header nav ul li a:hover {
-    background-color: #111111;
+    background-color: #ffffff;
+    color: #303633;
   }
 
   /* Desktop main section formatting */
