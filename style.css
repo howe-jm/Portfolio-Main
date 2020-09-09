@@ -58,38 +58,46 @@ footer {
 /* Header Formatting */
 
 .head-container {
+  width: 100%;
   display: flex;
   background-color: #303633;
   color: #ffffff;
-  flex-flow: column wrap;
-  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.name-box {
+  flex: 1;
+  width: 100%;
+  margin-left: 2%;
+  justify-self: center;
+  text-align: center;
 }
 
 header nav {
+  flex: 1;
   display: flex;
-  align-self: center;
-  margin: 0 7% 0 0;
+  flex-flow: column wrap;
+  width: 100%;
+  justify-self: center;
+  text-align: center;
+  margin-top: 10px;
 }
 
 header nav ul {
-  display: flex;
   list-style: none;
+}
+
+header nav ul li {
+  margin: 2% 10%;
+  min-width: 200px;
+  text-align: right;
 }
 
 header nav ul li a {
   color: #ffffff;
   text-decoration: none;
-  margin: 0 5px 0 5px;
+  margin: 0 35px 0 35px;
 }
-
-.name-box {
-  flex-grow: 1;
-  flex: 1;
-  padding: 0 0 0 2%;
-  margin: 0 auto 0 auto;
-  text-align: center;
-}
-
 /* Main section formatting */
 
 .main-container {
@@ -134,8 +142,8 @@ h3 {
 
 .traits-box {
   flex: 1;
-  width: 100%;
-  margin: 0 2% 5% 2%;
+  width: 96%;
+  margin: 5% 2% 5% 2%;
   padding: 0 2% 0 2%;
   background-color: #303633;
   color: #ffffff;
@@ -145,15 +153,15 @@ h3 {
 
 .projects-container {
   display: flex;
+  width: 90%;
   flex-flow: column wrap;
   border-color: #000;
   margin: 3% 5% 3% 5%;
 }
 
 .project {
-  flex: 1;
-  border: solid 1px;
   padding: 1% 2%;
+  border: solid 1px #000000;
 }
 
 /* Contact section*/
@@ -239,7 +247,7 @@ h3 {
 
 /* Flexbox element controls with Media Queries */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 900px) {
   /* Page max width/wrapping class */
 
   #page-wrap {
@@ -251,36 +259,48 @@ h3 {
   /* Desktop header formatting */
 
   .head-container {
-    width: 100%;
     max-width: 900px;
     margin: auto;
-    flex-flow: row wrap;
+    flex-flow: column wrap-reverse;
   }
 
   .name-box {
-    flex-grow: 1;
-    flex: 1;
-    padding: 0 0 0 2%;
-    margin: 0 auto 0 auto;
-    text-align: left;
+    flex: 3;
+    text-align: center;
     font-size: 1.5em;
   }
 
   /* Desktop header nav formatting */
 
   header nav {
-    display: flex;
-    align-self: flex-end;
+    text-align: center;
+    align-content: center;
   }
+
   header nav ul {
-    display: flex;
-    padding-left: 0;
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #303633;
   }
+
+  header nav ul li {
+    margin: 0;
+    min-width: 0;
+    float: left;
+  }
+
   header nav ul li a {
-    color: #fff;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
     text-decoration: none;
-    margin: 0 10px 0 5px;
+  }
+
+  header nav ul li a:hover {
+    background-color: #111111;
   }
 
   /* Desktop main section formatting */
