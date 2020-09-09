@@ -146,11 +146,18 @@ h3 {
 
 .traits-box {
   flex: 1;
-  width: 96%;
-  margin: 5% 2% 5% 2%;
-  padding: 0 2% 0 2%;
+  width: 100%;
   background-color: #303633;
   color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.traits-box2 {
+  flex: 1;
+  width: 100%;
+  background-color: #303633;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 /* Projects section*/
@@ -165,7 +172,21 @@ h3 {
 
 .project {
   padding: 1% 2%;
-  border: solid 1px #000000;
+  background-color: #303633;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project2 {
+  padding: 1% 2%;
+  background-color: #303633;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project a, .project2 a {
+  text-decoration: none;
+  color: #bec5c2;
 }
 
 /* Contact section*/
@@ -210,9 +231,12 @@ h3 {
   display: flex;
   flex-flow: column wrap;
   font-size: 1rem;
+  color: #fff;
   text-align: left;
   text-justify: left;
   width: 85%;
+  background: #303633;
+  padding: 10px 15px;
 }
 
 .email-form textarea {
@@ -249,12 +273,18 @@ h3 {
 .button-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
 }
 
-.buttons {
-  border: solid 2px #000;
-  margin: 10px;
+.bspace {
+  margin-left: 20px;
+}
+
+.formbutton {
+  border: solid 2px #bec5c2;
+  border-radius: 0;
+  background-color: #303633;
+  color: #bec5c2;
 }
 
 /* Flexbox element controls with Media Queries */
@@ -338,6 +368,17 @@ h3 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    width: 97%;
+    padding-left: 2.9%;
+  }
+
+  .traits-box {
+    padding: 10px 20px;
+  }
+
+  .traits-box2 {
+    padding: 10px 20px;
+    background: #292e2c;
   }
   .main-container {
     width: 100%;
@@ -348,11 +389,27 @@ h3 {
     flex-flow: row wrap;
     justify-content: space-between;
   }
+
+  .projects-container a:hover {
+    background-color: #ffffff;
+    color: #303633;
+  }
   .project {
     flex: 1;
     min-width: 300px;
     max-width: 49%;
     margin-bottom: 14px;
+    background-color: #303633;
+    color: #fff;
+  }
+
+  .project2 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 49%;
+    margin-bottom: 14px;
+    background-color: #292e2c;
+    color: #fff;
   }
 
   /* Desktop e-mail form formatting */
