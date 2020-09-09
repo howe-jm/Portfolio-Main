@@ -249,11 +249,12 @@ h3 {
 .button-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
 }
 
 .buttons {
   border: solid 2px #000;
+  margin: 10px;
 }
 
 /* Flexbox element controls with Media Queries */
