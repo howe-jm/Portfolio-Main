@@ -299,23 +299,15 @@ h3 {
   }
 
   .email-form {
-    display: flex;
     width: 85%;
   }
-  .name-form {
-    flex: 1;
+
+  .name-address-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .name-address-group div {
     width: 49%;
-  }
-
-  .subject-form {
-    width: 50%;
-  }
-
-  .subject-form input {
-    width: 200%;
-  }
-
-  .message-form {
-    width: 100%;
   }
 }

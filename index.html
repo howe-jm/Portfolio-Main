@@ -209,30 +209,32 @@
               <form action="https://formspree.io/mqkyrynz" method="POST">
                 <fieldset>
                   <legend>E-mail Me!</legend>
-                  <div class="name-form">
-                    <label for="fullname">Your full name: </label>
-                    <input
-                      id="fullname"
-                      type="text"
-                      placeholder="Guy Incognito"
-                      name="name"
-                      class="nameform"
-                      autofocus="on"
-                      required
-                    />
+                  <div class="name-address-group">
+                    <div>
+                      <label for="fullname">Your full name: </label>
+                      <input
+                        id="fullname"
+                        type="text"
+                        placeholder="Guy Incognito"
+                        name="name"
+                        class="nameform"
+                        autofocus="on"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label for="emailaddress">Your e-mail address: </label>
+                      <input
+                        id="emailaddress"
+                        type="text"
+                        placeholder="guy.incognito@gmail.com"
+                        name="email"
+                        class="emailform"
+                        required
+                      />
+                    </div>
                   </div>
-                  <div class="name-form">
-                    <label for="emailaddress">Your e-mail address: </label>
-                    <input
-                      id="emailaddress"
-                      type="text"
-                      placeholder="guy.incognito@gmail.com"
-                      name="email"
-                      class="emailform"
-                      required
-                    />
-                  </div>
-                  <div class="message-form">
+                  <div>
                     <label for="email-message">Your message: </label>
                     <textarea
                       id="email-message"
