@@ -141,7 +141,8 @@ h3 {
 .traits-container {
   display: flex;
   flex-flow: column wrap;
-  width: 100%;
+  width: 85%;
+  margin-left: 7.5%;
 }
 
 .traits-box {
@@ -150,6 +151,7 @@ h3 {
   background-color: #303633;
   color: #ffffff;
   margin-bottom: 20px;
+  padding: 15px 20px;
 }
 
 .traits-box2 {
@@ -158,6 +160,7 @@ h3 {
   background-color: #303633;
   color: #ffffff;
   margin-bottom: 20px;
+  padding: 15px 20px;
 }
 
 /* Projects section*/
