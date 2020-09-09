@@ -266,6 +266,7 @@ h3 {
     margin-right: auto;
     margin-left: auto;
     width: 65%;
+    min-width: 920px;
   }
 
   /* Desktop header formatting */
@@ -350,7 +351,8 @@ h3 {
   .project {
     flex: 1;
     min-width: 300px;
-    width: 49%;
+    max-width: 49%;
+    margin-bottom: 14px;
   }
 
   /* Desktop e-mail form formatting */
