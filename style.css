@@ -41,8 +41,13 @@ h5 {
   margin-bottom: -10px;
 }
 
+.personal h4 {
+  margin: -2% 0 0 0;
+}
+
 p {
   font-size: 1.1em;
+  text-align: left;
 }
 
 footer {
