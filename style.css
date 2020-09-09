@@ -141,6 +141,7 @@ h3 {
 .traits-container {
   display: flex;
   flex-flow: column wrap;
+  align-content: center;
   width: 85%;
   margin-left: 7.5%;
 }
@@ -148,6 +149,7 @@ h3 {
 .traits-box {
   flex: 1;
   width: 100%;
+  max-width: 400px;
   background-color: #303633;
   color: #ffffff;
   margin-bottom: 20px;
@@ -157,6 +159,7 @@ h3 {
 .traits-box2 {
   flex: 1;
   width: 100%;
+  max-width: 400px;
   background-color: #303633;
   color: #ffffff;
   margin-bottom: 20px;
