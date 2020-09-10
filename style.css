@@ -5,13 +5,14 @@
 }
 
 #page-wrap {
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #bec5c2;
   color: #303633;
+  justify-content: center;
 }
 
 img {
