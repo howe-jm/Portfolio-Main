@@ -10,9 +10,8 @@
 }
 
 body {
-  background-color: #bec5c2;
+  background-color: #303633;
   color: #303633;
-  justify-content: center;
 }
 
 img {
@@ -327,13 +326,18 @@ h3 {
 /* Flexbox element controls with Media Queries */
 
 @media all and (min-width: 900px) {
-  /* Page max width/wrapping class */
+  /* Page max width/wrapping class and body formatting */
 
   #page-wrap {
     margin-right: auto;
     margin-left: auto;
     width: 65%;
     min-width: 920px;
+  }
+
+  body {
+    background-color: #bec5c2;
+    color: #303633;
   }
 
   /* Desktop header formatting */
