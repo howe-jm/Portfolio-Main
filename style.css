@@ -180,26 +180,52 @@ h3 {
   flex-flow: column wrap;
   border-color: #000;
   margin: 3% 5% 3% 5%;
+
+}
+
+.project-text {
+  padding: 0 6%;
 }
 
 .project {
-  padding: 1% 2%;
   background-color: #303633;
   color: #fff;
   margin-bottom: 10px;
 }
 
 .project2 {
-  padding: 1% 2%;
   background-color: #303633;
   color: #fff;
   margin-bottom: 10px;
+}
+
+.project h4 {
+  font-size: 1.4rem;
+  background-color: #292e2c;
+  padding: 2% 0 0 4%;
+  height: 50px;
+  margin: 0 0 0 0;
+}
+
+.project2 h4 {
+  font-size: 1.4rem;
+  background-color: #292e2c ;
+  padding: 2% 0 0 4%;
+  height: 50px;
+  margin: 0;
 }
 
 .project a,
 .project2 a {
   text-decoration: none;
   color: #bec5c2;
+}
+
+.proj1-img {
+  max-width: 45%;
+  display: flex;
+  margin-left: 60%;
+  margin-top: -20%;
 }
 
 /* Contact section*/
@@ -436,6 +462,22 @@ h3 {
     justify-content: space-between;
   }
 
+  .project h4 {
+    background-color: #292e2c;
+    width: 100%;
+    padding: 3% 0 0 4%;
+    height: 50px;
+    margin: 0 0 0 0;
+  }
+  
+  .project2 h4 {
+    background-color: #303633 ;
+    width: 100%;
+    padding: 3% 0 0 4%;
+    height: 50px;
+    margin: 0;
+  }
+
   .projects-container a:hover {
     background-color: #ffffff;
     color: #303633;
@@ -456,6 +498,13 @@ h3 {
     margin-bottom: 14px;
     background-color: #292e2c;
     color: #fff;
+  }
+
+  .proj1-img {
+    max-width: 45%;
+    margin-left: 53%;
+    margin-top: -27%;
+    margin-bottom: -18%;
   }
 
   /* Desktop e-mail form formatting */
